@@ -1,34 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import "./App.css";
 
-function App() {
-  const [count, setCount] = useState(0)
+import { useEffect, useState } from "react";
+
+import Home from "./screens/Home";
+import About from "./screens/About";
+import Skills from "./screens/Skills";
+import Experience from "./screens/Experience";
+import Projects from "./screens/Projects";
+import Contact from "./screens/Contact";
+
+import Router from "./components/Router";
+
+import { DarkModeButton } from "./components/Buttons";
+
+export default function App() {
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
+
+  const toggleTheme = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+  };
+
+  useEffect(() => {
+    localStorage.setItem("theme", theme);
+  }, [theme]);
 
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <div id={theme} className="App scrollbar">
+      <DarkModeButton theme={theme} onClick={toggleTheme} />
+      <Router />
+      <Home />
+      <About />
+      <Skills />
+      <Experience />
+      <Projects />
+      <Contact />
     </div>
-  )
+  );
 }
-
-export default App

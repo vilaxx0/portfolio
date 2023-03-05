@@ -8,6 +8,7 @@ import {
   Github_Button,
   Instagram_Button,
   Twitter_Button,
+  Telegram_Button,
 } from "../components/Buttons";
 
 export default function Home() {
@@ -37,6 +38,7 @@ export default function Home() {
           <Github_Button />
           <Instagram_Button />
           <Twitter_Button />
+          <Telegram_Button />
         </div>
 
         <div className="image_container">

@@ -7,6 +7,8 @@ import {
   AiFillGithub,
 } from "react-icons/ai";
 
+import { BsTelegram } from "react-icons/bs";
+
 import cv from "../documents/CV.pdf";
 
 interface ButtonProps {
@@ -87,6 +89,14 @@ export const Twitter_Button: FC = () => {
       className="social_button"
     >
       <AiOutlineTwitter />
+    </a>
+  );
+};
+
+export const Telegram_Button: FC = () => {
+  return (
+    <a href="https://t.me/vilaxx0" target="_blank" className="social_button">
+      <BsTelegram />
     </a>
   );
 };

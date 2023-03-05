@@ -1,7 +1,14 @@
 import image from "../assets/cat.jpg";
 import { CgMouse } from "react-icons/cg";
 
-import { Button_Transparent, Button_Fill } from "../components/Buttons";
+import {
+  CV_Button,
+  Button,
+  LinkedIn_Button,
+  Github_Button,
+  Instagram_Button,
+  Twitter_Button,
+} from "../components/Buttons";
 
 export default function Home() {
   const goToSection = (name: string): void => {
@@ -20,21 +27,16 @@ export default function Home() {
         <h3>Software Developer</h3>
       </div>
       <div className="buttons">
-        <Button_Transparent text="Download CV" onClick={() => {}} />
-        <Button_Fill text="About Me" onClick={() => goToSection("About")} />
+        <CV_Button text="Download CV" />
+        <Button text="About Me" onClick={() => goToSection("About")} />
       </div>
 
       <div className="main">
         <div className="social">
-          <a href="">
-            <p>linked in</p>
-          </a>
-          <a href="">
-            <p>linked in</p>
-          </a>
-          <a href="">
-            <p>linked in</p>
-          </a>
+          <LinkedIn_Button />
+          <Github_Button />
+          <Instagram_Button />
+          <Twitter_Button />
         </div>
 
         <div className="image_container">

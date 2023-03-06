@@ -29,8 +29,11 @@ export default function App() {
       <DarkModeButton theme={theme} onClick={toggleTheme} />
       <Router />
       <Home />
+      <br />
+      <br />
       <About />
       <Skills />
+
       <Experience />
       <Projects />
       <Contact />

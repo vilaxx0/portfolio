@@ -1,3 +1,5 @@
+import "./styles/home.css";
+
 import image from "../assets/cat.jpg";
 import { CgMouse } from "react-icons/cg";
 
@@ -21,9 +23,9 @@ export default function Home() {
   };
 
   return (
-    <div id="Home">
+    <section id="Home">
       <div className="title">
-        <h4 style={{ fontSize: "1.2em" }}>Hello, I am</h4>
+        <h4>Hello, I am</h4>
         <h1>Vilius BUČINSKAS</h1>
         <h3>Software Developer</h3>
       </div>
@@ -33,26 +35,26 @@ export default function Home() {
       </div>
 
       <div className="main">
-        <div className="social">
+        <div className="social_container">
           <LinkedIn_Button />
           <Github_Button />
           <Instagram_Button />
           <Twitter_Button />
           <Telegram_Button />
         </div>
-
         <div className="image_container">
           <img className="image" src={image} alt="CAT" />
         </div>
-        <div className="scroll_example_container">
-          <div className="scroll_example" onClick={() => goToSection("About")}>
+
+        <div className="scroll_container">
+          <div className="icon" onClick={() => goToSection("About")}>
+            <CgMouse />
+          </div>
+          <div className="text" onClick={() => goToSection("About")}>
             <p>Scroll Down</p>
-            <div className="icon">
-              <CgMouse />
-            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

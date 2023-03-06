@@ -22,65 +22,59 @@ const Router: FC = () => {
 
   return (
     <div className="router_container">
-      <a href="#Home">
-        <div
-          className={
-            active[0] == true ? "router_icon router_icon_active" : "router_icon"
-          }
-          onClick={() => handleClick(0)}
-        >
-          <FaHome />
-        </div>
+      <a
+        href="#Home"
+        className={
+          active[0] == true ? "router_icon router_icon_active" : "router_icon"
+        }
+        onClick={() => handleClick(0)}
+      >
+        <FaHome />
       </a>
-      <a href="#About">
-        <div
-          className={
-            active[1] == true ? "router_icon router_icon_active" : "router_icon"
-          }
-          onClick={() => handleClick(1)}
-        >
-          <BsPersonFill />
-        </div>
+      <a
+        href="#About"
+        className={
+          active[1] == true ? "router_icon router_icon_active" : "router_icon"
+        }
+        onClick={() => handleClick(1)}
+      >
+        <BsPersonFill />
       </a>
-      <a href="#Skills">
-        <div
-          className={
-            active[2] == true ? "router_icon router_icon_active" : "router_icon"
-          }
-          onClick={() => handleClick(2)}
-        >
-          <FaStar />
-        </div>
+      <a
+        href="#Skills"
+        className={
+          active[2] == true ? "router_icon router_icon_active" : "router_icon"
+        }
+        onClick={() => handleClick(2)}
+      >
+        <FaStar />
       </a>
-      <a href="#Experience">
-        <div
-          className={
-            active[3] == true ? "router_icon router_icon_active" : "router_icon"
-          }
-          onClick={() => handleClick(3)}
-        >
-          <FaBriefcase />
-        </div>
+      <a
+        href="#Experience"
+        className={
+          active[3] == true ? "router_icon router_icon_active" : "router_icon"
+        }
+        onClick={() => handleClick(3)}
+      >
+        <FaBriefcase />
       </a>
-      <a href="#Projects">
-        <div
-          className={
-            active[4] == true ? "router_icon router_icon_active" : "router_icon"
-          }
-          onClick={() => handleClick(4)}
-        >
-          <FaFolderOpen />
-        </div>
+      <a
+        href="#Projects"
+        className={
+          active[4] == true ? "router_icon router_icon_active" : "router_icon"
+        }
+        onClick={() => handleClick(4)}
+      >
+        <FaFolderOpen />
       </a>
-      <a href="#Contact">
-        <div
-          className={
-            active[5] == true ? "router_icon router_icon_active" : "router_icon"
-          }
-          onClick={() => handleClick(5)}
-        >
-          <SiMinutemailer />
-        </div>
+      <a
+        href="#Contact"
+        className={
+          active[5] == true ? "router_icon router_icon_active" : "router_icon"
+        }
+        onClick={() => handleClick(5)}
+      >
+        <SiMinutemailer />
       </a>
     </div>
   );

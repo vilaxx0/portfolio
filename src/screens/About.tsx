@@ -1,3 +1,5 @@
+import "./styles/about.css";
+
 import image from "../assets/cat.jpg";
 
 import { Button } from "../components/Buttons";
@@ -8,7 +10,7 @@ export default function About() {
       <h1>About</h1>
       <div className="about_container">
         <div className="image">
-          <img size={"12px"} src={image} alt="CAT" />
+          <img src={image} alt="CAT" />
         </div>
         <div className="information">
           <div className="accomplishments">

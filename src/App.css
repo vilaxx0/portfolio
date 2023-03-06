@@ -25,14 +25,14 @@
   color: var(--color-light-text);
 }
 
-#light h1,
-#light h4 {
-  color: var(--color-light-title-text);
-}
-
 #dark {
   background-color: var(--color-dark-background);
   color: var(--color-dark-text);
+}
+
+#light h1,
+#light h4 {
+  color: var(--color-light-title-text);
 }
 
 #dark h1,
@@ -40,187 +40,15 @@
   color: var(--color-dark-title-text);
 }
 
-h1 {
-  font-family: "Winston-Bold";
-  font-size: 2.5em;
-}
-
 .App {
   display: flex;
   flex-direction: column;
-
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-/* <!-- HOME --!> */
-
-#Home {
-  display: flex;
-  flex-direction: column;
-  height: 920px;
-
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  /* background-color: #336f856b; */
-}
-
-#Home .title {
-  flex: 1.5;
-  padding: 3em 0 0 0;
-  line-height: 1.8;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-#Home .buttons {
-  flex: 1;
-  display: flex;
-
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-#Home .main {
-  flex: 5;
-  padding: 3em 0 0 0;
-  display: flex;
-  flex-direction: row;
-
-  /* text-align: center; */
-}
-#Home .main .social {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
-  text-align: center;
-  padding: 0 0 3em 0;
-}
-
-#Home .image_container {
-  flex: 4;
-}
-
-#Home .image_container .image {
-  width: 400px;
-  border-radius: 50% 50% 10% 10%;
-}
-
-#Home .scroll_example_container {
-  flex: 1;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-end;
-  text-align: center;
   flex-wrap: wrap;
 
-  font-size: 0.8em;
-  cursor: pointer;
-
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  padding: 0 0 5em 0;
-}
-
-#light .scroll_example_container {
-  color: #000000;
-}
-
-#dark .scroll_example_container {
-  color: var(--color-main);
-}
-
-#Home .scroll_example_container .scroll_example {
-  display: flex;
-  transform: rotate(-90deg);
-  align-self: flex-end;
-  align-items: center;
-}
-
-#Home .scroll_example_container .icon {
-  transform: rotate(90deg);
-  font-size: 2em;
-  padding: 0em 0.5em;
-}
-
-/* <!-- HOME ENDS --!> */
-
-/* <!-- ABOUT --!> */
-
-#About {
-  height: 800px;
-}
-
-#About .about_container {
-  display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-
-#About .about_container .image {
-  flex: 1;
-}
-
-#About .about_container .image img {
-  width: 50%;
-}
-
-#About .about_container .information {
-  flex: 1;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#About .about_container .information .accomplishments {
-  flex: 1;
-
-  padding: 20px 0;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-#About .about_container .information .accomplishments p {
-  padding: 0 20px;
-}
-
-#About .about_container .information .about {
-  flex: 1;
-  padding: 20px 0;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-#About .about_container .information .contact {
-  flex: 1;
-  padding: 20px 0;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-/* <!-- ABOUT ENDS --!> */
 
 /* <!-- SKILLS --!> */
 
@@ -261,12 +89,17 @@ h1 {
 /* <!-- ROUTER --!> */
 
 .router_container {
-  display: inline-flex;
+  display: flex;
   position: fixed;
-  bottom: 1em;
+  bottom: 10px;
 
-  padding: 1em 2em;
+  width: 25em;
+
+  padding: 1em 1em;
   border-radius: 100px;
+
+  justify-content: space-evenly;
+  transition: all 0.5s ease;
 }
 
 #light .router_container {
@@ -278,21 +111,15 @@ h1 {
 }
 
 .router_icon {
-  display: flex;
-
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-
-  margin: 0em 0.2em;
-
-  border-radius: 2em;
   width: 2em;
   height: 2em;
-  font-size: 18px;
+  border-radius: 2em;
+
+  text-align: center;
+  line-height: 2em;
 
   cursor: pointer;
-  font-size: 22px;
+  font-size: 1.5em;
 }
 
 #light .router_icon {
@@ -344,20 +171,49 @@ h1 {
 
 /* -------------------------------- */
 
+.button {
+  background-color: var(--color-main);
+  border: 0.2em solid var(--color-main);
+  border-radius: 0.8em;
+  font-size: 1.2em;
+  color: var(--color-dark-background);
+
+  padding: 1em 1.2em;
+
+  cursor: pointer;
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.button:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+/* -------------------------------- */
+
 .cv_button {
-  font-family: "Winston-Bold";
   background-color: transparent;
   border: 0.2em solid var(--color-main);
   border-radius: 0.8em;
-  font-size: 1.1em;
+  font-size: 1.2em;
 
-  padding: 1em 2em;
-  margin: 0em 0.5em;
+  padding: 1em 1.2em;
+  margin-right: 1em;
+  margin-bottom: 1em;
 
   text-decoration: none;
 
   cursor: pointer;
   transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 #light .cv_button {
@@ -382,42 +238,18 @@ h1 {
   box-shadow: none;
   transform: translateY(0);
 }
-
-/* -------------------------------- */
-
-.button {
-  font-family: "Winston-Bold";
-  background-color: var(--color-main);
-  border: 0.2em solid var(--color-main);
-  border-radius: 0.8em;
-  font-size: 1.1em;
-  color: var(--color-dark-background);
-
-  padding: 1em 2em;
-  margin: 0em 0.5em;
-
-  cursor: pointer;
-  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.button:hover {
-  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
-  transform: translateY(-2px);
-}
-
-.button:active {
-  box-shadow: none;
-  transform: translateY(0);
-}
 /* ----------------- */
 
 .social_button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 1.5em;
+  height: 1.5em;
+
+  text-align: center;
+  line-height: 2em;
+
   border-radius: 4px;
   padding: 4px;
-  font-size: 1.4em;
+  font-size: 2em;
   margin: 4px 0;
   border: none;
   box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
@@ -438,4 +270,14 @@ h1 {
 .social_button:hover {
   color: #fff !important;
   background-color: var(--color-main) !important;
+}
+
+/* <!-- Buttons ENDS --!> */
+
+/* <!-- RESPONSIVENESS --!> */
+
+@media screen and (max-width: 600px) {
+  .router_container {
+    width: 90%;
+  }
 }

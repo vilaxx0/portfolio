@@ -1,3 +1,5 @@
+import "./styles/experience.css";
+
 export default function Experience() {
   return (
     <div id="Experience">

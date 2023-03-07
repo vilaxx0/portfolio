@@ -1,0 +1,22 @@
+#Contact {
+  background-color: rgb(255, 0, 0);
+  height: 800px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media screen and (min-width: 1000px) {
+  #Contact {
+    width: 990px;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  #Contact {
+    width: 100%;
+  }
+}

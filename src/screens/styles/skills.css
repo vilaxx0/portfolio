@@ -1,0 +1,22 @@
+#Skills {
+  /* background-color: rgb(103, 115, 70); */
+  height: 800px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media screen and (min-width: 1000px) {
+  #Skills {
+    width: 990px;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  #Skills {
+    width: 100%;
+  }
+}

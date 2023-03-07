@@ -1,6 +1,6 @@
 import "./App.css";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 import Home from "./screens/Home";
 import About from "./screens/About";
@@ -23,14 +23,11 @@ export default function App() {
   useEffect(() => {
     localStorage.setItem("theme", theme);
   }, [theme]);
-
   return (
     <div id={theme} className="App scrollbar">
       <DarkModeButton theme={theme} onClick={toggleTheme} />
       <Router />
       <Home />
-      <br />
-      <br />
       <About />
       <Skills />
 

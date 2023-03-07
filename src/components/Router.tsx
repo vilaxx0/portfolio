@@ -1,8 +1,10 @@
-import { FC, useState } from "react";
+import { FC, useState, useEffect } from "react";
 
-import { FaHome, FaStar, FaBriefcase, FaFolderOpen } from "react-icons/fa";
+import { FaHome, FaStar, FaBriefcase } from "react-icons/fa";
 import { BsPersonFill } from "react-icons/bs";
 import { SiMinutemailer } from "react-icons/si";
+
+import { BsAwardFill } from "react-icons/bs";
 
 const Router: FC = () => {
   const [active, setActive] = useState([
@@ -56,7 +58,7 @@ const Router: FC = () => {
         }
         onClick={() => handleClick(3)}
       >
-        <FaBriefcase />
+        <BsAwardFill />
       </a>
       <a
         href="#Projects"
@@ -65,7 +67,7 @@ const Router: FC = () => {
         }
         onClick={() => handleClick(4)}
       >
-        <FaFolderOpen />
+        <FaBriefcase />
       </a>
       <a
         href="#Contact"

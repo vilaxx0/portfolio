@@ -1,0 +1,22 @@
+#Experience {
+  background-color: rgb(98, 116, 211);
+  height: 800px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media screen and (min-width: 1000px) {
+  #Experience {
+    width: 990px;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  #Experience {
+    width: 100%;
+  }
+}

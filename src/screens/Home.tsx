@@ -2,7 +2,7 @@ import "./styles/home.css";
 
 import image from "../assets/cat.jpg";
 import { CgMouse } from "react-icons/cg";
-
+import { useEffect } from "react";
 import {
   CV_Button,
   Button,
@@ -13,15 +13,32 @@ import {
   Telegram_Button,
 } from "../components/Buttons";
 
-export default function Home() {
-  const goToSection = (name: string): void => {
-    const section = document.getElementById(name) as HTMLElement;
-    window.scrollTo({
-      top: section.offsetTop,
-      behavior: "smooth",
-    });
-  };
+import { goToSection } from "../common/functions";
 
+// Get the current hash value from the URL
+const currentHash = window.location.hash;
+
+// useEffect(() => {
+//   // Determine which screen the user is on based on the current hash value
+//   // if (currentHash === "#Home") {
+//   //   setActive([true, false, false, false, false, false]);
+//   // } else if (currentHash === "#About") {
+//   //   setActive([false, true, false, false, false, false]);
+//   // } else if (currentHash === "#Skills") {
+//   //   setActive([false, false, true, false, false, false]);
+//   // } else if (currentHash === "#Experience") {
+//   //   setActive([false, false, false, true, false, false]);
+//   // } else if (currentHash === "#Projects") {
+//   //   setActive([false, false, false, false, true, false]);
+//   // } else if (currentHash === "#Contact") {
+//   //   setActive([false, false, false, false, false, true]);
+//   // } else {
+//   //   setActive([false, false, false, false, false, false]);
+//   // }
+//   console.log(currentHash);
+// }, [currentHash]);
+
+export default function Home() {
   return (
     <section id="Home">
       <div className="title">

@@ -50,42 +50,6 @@
   text-align: center;
 }
 
-/* <!-- SKILLS --!> */
-
-#Skills {
-  background-color: rgb(103, 115, 70);
-  height: 800px;
-}
-
-/* <!-- SKILLS ENDS --!> */
-
-/* <!-- EXPERIENCE --!> */
-
-#Experience {
-  background-color: rgb(98, 116, 211);
-  height: 800px;
-}
-
-/* <!-- EXPERIENCE ENDS --!> */
-
-/* <!-- PROJECTS --!> */
-
-#Projects {
-  background-color: rgb(255, 3, 163);
-  height: 800px;
-}
-
-/* <!-- PROJECTS ENDS --!> */
-
-/* <!-- CONTACT --!> */
-
-#Contact {
-  background-color: rgb(255, 0, 0);
-  height: 800px;
-}
-
-/* <!-- CONTACT ENDS --!> */
-
 /* <!-- ROUTER --!> */
 
 .router_container {
@@ -172,6 +136,7 @@
 /* -------------------------------- */
 
 .button {
+  font-family: "Winston-Bold";
   background-color: var(--color-main);
   border: 0.2em solid var(--color-main);
   border-radius: 0.8em;
@@ -197,6 +162,7 @@
 /* -------------------------------- */
 
 .cv_button {
+  font-family: "Winston-Bold";
   background-color: transparent;
   border: 0.2em solid var(--color-main);
   border-radius: 0.8em;
@@ -252,13 +218,13 @@
   font-size: 2em;
   margin: 4px 0;
   border: none;
-  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
 
   cursor: pointer;
 }
 
 #light .social_button {
   color: #000000;
+  box-shadow: 3px 3px 6px rgba(112, 112, 112, 0.4);
   background-color: var(--color-light-container);
 }
 
@@ -273,6 +239,48 @@
 }
 
 /* <!-- Buttons ENDS --!> */
+
+/* <!-- Containers --!> */
+
+.about_cont {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+
+  width: 120px;
+  height: 100px;
+
+  border-radius: 10%;
+
+  font-size: 0.7em;
+  margin: 5px;
+  /* padding: 5px; */
+}
+
+.about_cont .text > h4 {
+  font-family: "Winston-Bold";
+  font-size: 1.3em;
+  padding-bottom: 5px;
+}
+
+.about_cont .icon {
+  font-size: 2em;
+  color: var(--color-main);
+}
+
+#light .about_cont {
+  box-shadow: 3px 3px 6px rgba(109, 109, 109, 0.4);
+  background-color: var(--color-light-container);
+}
+
+#dark .about_cont {
+  background-color: var(--color-dark-container);
+}
+
+/* <!-- Containers ENDS --!> */
 
 /* <!-- RESPONSIVENESS --!> */
 

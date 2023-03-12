@@ -1,0 +1,31 @@
+#Footer {
+  background-color: var(--color-main);
+  height: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+#Footer > h1 {
+  font-family: "Winston-Bold";
+  color: var(--color-dark-background);
+  font-size: 2.2rem;
+  padding-top: 2rem;
+}
+
+#Footer > p {
+  color: var(--color-light-text);
+  font-size: 0.8rem;
+}
+
+#Footer .socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.5rem;
+  padding: 1.2rem 0;
+}

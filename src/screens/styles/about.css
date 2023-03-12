@@ -8,12 +8,6 @@
   color: var(--color-main);
 }
 
-#About .title {
-  flex: 1;
-  font-size: 0.8em;
-  padding-top: 50px;
-}
-
 #About .about_container {
   flex: 6;
   display: flex;

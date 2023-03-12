@@ -8,6 +8,7 @@ import Skills from "./screens/Skills";
 import Experience from "./screens/Experience";
 import Projects from "./screens/Projects";
 import Contact from "./screens/Contact";
+import Footer from "./screens/Footer";
 
 import Router from "./components/Router";
 
@@ -30,10 +31,10 @@ export default function App() {
       <Home />
       <About />
       <Skills />
-
       <Experience />
       <Projects />
       <Contact />
+      <Footer />
     </div>
   );
 }

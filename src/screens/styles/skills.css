@@ -1,17 +1,16 @@
 #Skills {
-  /* background-color: rgb(103, 115, 70); */
   height: auto;
   margin-top: 40px;
   display: flex;
   flex-direction: column;
+
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
-#Skills > h1 {
+#Skills .title > h1 {
   color: var(--color-main);
-  margin: 20px 0;
 }
 
 @media screen and (min-width: 1000px) {

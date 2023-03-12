@@ -19,7 +19,7 @@ const about_containers_data = [
 
 export default function About() {
   return (
-    <div id="About">
+    <section id="About">
       <div className="title">
         <h1>About Me</h1>
       </div>
@@ -54,6 +54,6 @@ export default function About() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

@@ -1,3 +1,26 @@
+type Item = { title: string; description: string };
+export const educationItems: Item[] = [
+  {
+    title: "Bachelor of Science",
+    description:
+      "ICT & Software Engineering at Fontys University of Applied Sciences",
+  },
+  {
+    title: "High School Diploma",
+    description: "K. Donelaičio Gymnasium",
+  },
+];
+export const jobsItems: Item[] = [
+  {
+    title: "Software Developer Internship",
+    description: "Signify N.V.",
+  },
+  {
+    title: "Front-end Developer Internship",
+    description: "Connectural B.V.",
+  },
+];
+
 export const skillsBackend = [
   {
     language: "C#",
@@ -50,6 +73,7 @@ export const skillsFrontend = [
     language: "CSS",
     level: "Proficient",
   },
+
   {
     language: "React",
     level: "Proficient",
@@ -62,15 +86,15 @@ export const skillsFrontend = [
 
 export const skillsMobile = [
   {
-    language: "React Native",
-    level: "Intermediate",
-  },
-  {
     language: "Dart",
     level: "Intermediate",
   },
   {
     language: "Flutter",
+    level: "Intermediate",
+  },
+  {
+    language: "React Native",
     level: "Intermediate",
   },
   {

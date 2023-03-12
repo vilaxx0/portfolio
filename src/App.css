@@ -31,11 +31,13 @@
 }
 
 #light h1,
+#light h2,
 #light h4 {
   color: var(--color-light-title-text);
 }
 
 #dark h1,
+#dark h2,
 #dark h4 {
   color: var(--color-dark-title-text);
 }
@@ -216,7 +218,7 @@
   border-radius: 4px;
   padding: 4px;
   font-size: 2em;
-  margin: 4px 0;
+  margin: 5px 10px;
   border: none;
 
   cursor: pointer;
@@ -282,83 +284,199 @@
 
 /* ---------------------------------------- */
 
-.skills_outer {
+.skills_outer_card {
   display: flex;
   flex-direction: column;
 
   width: 455px;
   height: auto;
 
-  border-radius: 10% 10% 10% 10% / 20% 20% 20% 20%;
+  border-radius: 10%;
 
   font-size: 0.7em;
 
   margin: 20px 20px;
 }
 
-.skills_outer .title {
-  flex: 1;
+.skills_outer_card .skills_title {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   text-align: center;
-}
-
-.skills_outer .title > h3 {
-  font-family: "Winston-Bold";
-  font-size: 1.3em;
+  justify-content: center;
   color: var(--color-main);
-  padding-top: 20px;
+  font-size: 2em;
+  margin: 1em 0;
 }
 
-.skills_outer .children {
-  flex: 8;
+.skills_outer_card .skills_title > h3 {
+  font-family: "Winston-Bold";
+  margin-left: 10px;
+}
+
+.skills_outer_card .skills_children {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-  align-items: flex-start;
-  margin-bottom: 20px;
-  /* background-color: #1b44ea99; */
+  margin-bottom: 10px;
 }
 
-#light .skills_outer {
+#light .skills_outer_card {
   box-shadow: 1.5px 1.5px 8px rgba(111, 109, 109, 0.213);
   background-color: var(--color-light-container);
 }
 
-#dark .skills_outer {
+#dark .skills_outer_card {
   background-color: var(--color-dark-container);
 }
 
-.skills_inner {
-  height: 70px;
-  width: 130px;
-  border-radius: 10%;
-  margin-left: 15px;
-  margin-bottom: 15px;
-  padding-top: 5px;
-  /* background-color: #000000; */
-}
-
-.skills_inner .language {
+.skills_inner_card {
+  height: 90px;
+  width: 110px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  /* align-items: flex-start; */
-  padding: 10px;
-  font-size: 1.4em;
-  size: 2em;
+
+  margin-left: 33px;
+  margin-bottom: 20px;
 }
 
-.skills_inner .language .icon {
-  font-size: 1.1em;
-  padding-right: 5px;
+.skills_inner_card .language {
+  font-family: "Winston-Bold";
+  display: flex;
+
+  text-align: start;
+
+  /* white-space: nowrap; */
+}
+
+.skills_inner_card .language .icon {
+  font-size: 1.2em;
+  margin-right: 10px;
   color: var(--color-main);
   align-self: center;
-  padding-top: 5px;
 }
 
-.skills_inner .tag {
-  font-size: 1.1em;
+.skills_inner_card .tag {
+  font-size: 1.2em;
+}
+
+.exp_card {
+  display: flex;
+  flex-direction: column;
+
+  width: 455px;
+  height: auto;
+  border-radius: 10%;
+
+  font-size: 0.7em;
+
+  margin: 20px 20px;
+
+  /* justify-content: center; */
+}
+
+.exp_card .exp_title {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  color: var(--color-main);
+  font-size: 2em;
+  margin: 1em 0;
+}
+
+.exp_card .exp_title > h3 {
+  font-family: "Winston-Bold";
+  margin-left: 10px;
+}
+
+.exp_card .exp_children {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-items: flex-end; */
+  margin-bottom: 10px;
+}
+
+#light .exp_card {
+  box-shadow: 1.5px 1.5px 8px rgba(111, 109, 109, 0.213);
+  background-color: var(--color-light-container);
+}
+
+#dark .exp_card {
+  background-color: var(--color-dark-container);
+}
+
+.exp_card .exp_children .exp_items {
+  height: 90px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 10%;
+
+  margin-bottom: 25px;
+
+  text-align: left;
+}
+
+.exp_card .exp_items .exp_name {
+  font-family: "Winston-Bold";
+  display: flex;
+
+  flex-direction: row;
+}
+
+.exp_card .exp_items .exp_name .exp_icon {
+  font-size: 2em;
+  margin-right: 10px;
+  color: var(--color-main);
+  align-self: center;
+}
+
+.exp_items .exp_tag {
+  font-size: 1.4em;
+}
+
+/* ------------------------------ */
+
+.contact_card {
+  height: 200px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 10%;
+  margin: 10px 0;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.contact_card > h2 {
+  font-family: "Winston-Bold";
+  font-size: 0.5em;
+}
+
+.contact_card > p {
+  font-size: 0.4em;
+  padding-top: 25px;
+  color: var(--color-main);
+}
+
+#light .contact_card {
+  box-shadow: 1.5px 1.5px 8px rgba(111, 109, 109, 0.213);
+  background-color: var(--color-light-container);
+  color: var(--color-light-title-text);
+}
+
+#dark .contact_card {
+  background-color: var(--color-dark-container);
+  color: var(--color-dark-title-text);
 }
 
 /* <!-- Containers ENDS --!> */

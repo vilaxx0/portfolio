@@ -16,7 +16,7 @@ import {
 import { goToSection } from "../common/functions";
 
 // Get the current hash value from the URL
-const currentHash = window.location.hash;
+// const currentHash = window.location.hash;
 
 // useEffect(() => {
 //   // Determine which screen the user is on based on the current hash value

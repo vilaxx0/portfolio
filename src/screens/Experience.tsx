@@ -5,7 +5,7 @@ import { educationItems, jobsItems } from "../common/data";
 export default function Experience() {
   return (
     <section id="Experience">
-      <div className="title">
+      <div className="exp_title">
         <h1>Experience</h1>
       </div>
       <div className="exp_container">

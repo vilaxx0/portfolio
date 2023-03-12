@@ -1,0 +1,68 @@
+@media screen and (max-width: 600px) {
+  .router_container {
+    width: 90%;
+  }
+}
+
+.router_container {
+  display: flex;
+  position: fixed;
+  bottom: 10px;
+
+  width: 25em;
+
+  padding: 1em 1em;
+  border-radius: 100px;
+
+  justify-content: space-evenly;
+  transition: all 0.5s ease;
+}
+
+#light .router_container {
+  background-color: var(--color-light-router);
+}
+
+#dark .router_container {
+  background-color: var(--color-dark-router);
+}
+
+.router_icon {
+  width: 2em;
+  height: 2em;
+  border-radius: 2em;
+
+  text-align: center;
+  line-height: 2em;
+
+  cursor: pointer;
+  font-size: 1.5em;
+}
+
+#light .router_icon {
+  color: var(--color-light-router-icon);
+}
+
+#dark .router_icon {
+  color: var(--color-dark-router-icon);
+}
+
+.router_icon_active {
+  background-image: linear-gradient(
+    var(--color-main) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  box-shadow: 0 0 30px -5px var(--color-main);
+}
+
+.router_icon:hover {
+  background-image: linear-gradient(
+    var(--color-main) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: translateY(-2px);
+  box-shadow: 0 0 30px -5px var(--color-main);
+}
+
+.router_icon:active {
+  transform: translateY(0);
+}

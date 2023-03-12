@@ -1,3 +1,4 @@
+import "./styles/buttons.css";
 import { FC } from "react";
 import { BiSun, BiMoon } from "react-icons/bi";
 import {

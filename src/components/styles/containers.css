@@ -1,0 +1,242 @@
+/* ABOUT */
+
+.about_cont {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+
+  width: 120px;
+  height: 100px;
+
+  border-radius: 10%;
+
+  font-size: 0.7em;
+  margin: 5px;
+  /* padding: 5px; */
+}
+
+.about_cont .text > h4 {
+  font-family: "Winston-Bold";
+  font-size: 1.3em;
+  padding-bottom: 5px;
+}
+
+.about_cont .icon {
+  font-size: 2em;
+  color: var(--color-main);
+}
+
+#light .about_cont {
+  box-shadow: 3px 3px 6px rgba(109, 109, 109, 0.4);
+  background-color: var(--color-light-container);
+}
+
+#dark .about_cont {
+  background-color: var(--color-dark-container);
+}
+
+/* SKILLS */
+
+.skills_outer_card {
+  display: flex;
+  flex-direction: column;
+
+  width: 455px;
+  height: auto;
+
+  border-radius: 10%;
+
+  font-size: 0.7em;
+
+  margin: 20px 20px;
+}
+
+.skills_outer_card .skills_title {
+  font-family: "Winston-Bold";
+  color: var(--color-main);
+  font-size: 1rem;
+  margin-top: 1.5rem;
+}
+
+.skills_outer_card .skills_children {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+#light .skills_outer_card {
+  box-shadow: 1.5px 1.5px 8px rgba(111, 109, 109, 0.213);
+  background-color: var(--color-light-container);
+}
+
+#dark .skills_outer_card {
+  background-color: var(--color-dark-container);
+}
+
+.skills_inner_card {
+  height: 90px;
+  width: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin-left: 33px;
+  margin-bottom: 20px;
+}
+
+.skills_inner_card .language {
+  font-family: "Winston-Bold";
+  display: flex;
+  text-align: start;
+}
+
+.skills_inner_card .language .icon {
+  font-size: 1.2em;
+  margin-right: 10px;
+  color: var(--color-main);
+  align-self: center;
+}
+
+.skills_inner_card .tag {
+  font-size: 1.2em;
+}
+
+/* EXPERIENCE */
+
+.exp_card {
+  display: flex;
+  flex-direction: column;
+
+  width: 455px;
+  height: auto;
+  border-radius: 10%;
+
+  font-size: 0.7em;
+
+  margin: 20px 20px;
+
+  /* justify-content: center; */
+}
+
+.exp_card .exp_title {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  color: var(--color-main);
+  font-size: 1.4rem;
+  margin: 1em 0;
+}
+
+.exp_card .exp_title > h3 {
+  font-family: "Winston-Bold";
+  margin-left: 10px;
+  font-size: 1.2rem;
+}
+
+.exp_card .exp_children {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-items: flex-end; */
+  margin-bottom: 10px;
+}
+
+#light .exp_card {
+  box-shadow: 1.5px 1.5px 8px rgba(111, 109, 109, 0.213);
+  background-color: var(--color-light-container);
+}
+
+#dark .exp_card {
+  background-color: var(--color-dark-container);
+}
+
+.exp_card .exp_children .exp_items {
+  height: 90px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 10%;
+
+  margin-bottom: 25px;
+
+  text-align: left;
+}
+
+.exp_card .exp_items .exp_name {
+  font-family: "Winston-Bold";
+  display: flex;
+
+  flex-direction: row;
+}
+
+.exp_card .exp_items .exp_name .exp_icon {
+  font-size: 2em;
+  margin-right: 10px;
+  color: var(--color-main);
+  align-self: center;
+}
+
+.exp_items .exp_tag {
+  font-size: 1.4em;
+}
+
+/* PROJECT */
+
+.project_card {
+  display: flex;
+  flex-direction: column;
+
+  width: 200px;
+  height: 200px;
+  border-radius: 10%;
+
+  font-size: 0.7em;
+
+  margin: 20px 20px;
+}
+
+/* CONTACT */
+
+.contact_card {
+  height: 200px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 10%;
+  margin: 10px 0;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.contact_card > h2 {
+  font-family: "Winston-Bold";
+  font-size: 0.5em;
+}
+
+.contact_card > p {
+  font-size: 0.4em;
+  padding-top: 25px;
+  color: var(--color-main);
+}
+
+#light .contact_card {
+  box-shadow: 1.5px 1.5px 8px rgba(111, 109, 109, 0.213);
+  background-color: var(--color-light-container);
+  color: var(--color-light-title-text);
+}
+
+#dark .contact_card {
+  background-color: var(--color-dark-container);
+  color: var(--color-dark-title-text);
+}

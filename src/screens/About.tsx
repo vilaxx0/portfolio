@@ -20,7 +20,7 @@ const about_containers_data = [
 export default function About() {
   return (
     <section id="About">
-      <div className="title">
+      <div className="about_title">
         <h1>About Me</h1>
       </div>
 
@@ -40,7 +40,7 @@ export default function About() {
           </div>
           <div className="about">
             <p style={{ textAlign: "center", padding: "1em 0" }}>
-              Full-Stack Developer in Mobile & WEB{" "}
+              Full-Stack development in Mobile & WEB
             </p>
             <p>
               I am a software developer with experience in full-stack

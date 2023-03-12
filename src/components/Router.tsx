@@ -1,4 +1,5 @@
-import { FC, useState, useEffect } from "react";
+import "./styles/router.css";
+import { FC, useState } from "react";
 
 import { FaHome, FaStar, FaBriefcase } from "react-icons/fa";
 import { BsPersonFill } from "react-icons/bs";

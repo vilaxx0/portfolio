@@ -11,7 +11,7 @@ import {
 export default function Skills() {
   return (
     <section id="Skills">
-      <div className="title">
+      <div className="skills_title">
         <h1>Skills</h1>
       </div>
 

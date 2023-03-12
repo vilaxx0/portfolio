@@ -1,9 +1,73 @@
-type Item = { title: string; description: string };
+export type Item = { title: string; description: string };
+export interface Project {
+  title?: string;
+  gitLink?: string;
+  coverPhoto?: string;
+  projectPhotos?: string[];
+}
+
+export const projects: Project[] = [
+  {
+    title: "Chess Maps",
+    gitLink: "https://github.com/vilaxx0/chess-maps",
+    coverPhoto: "../assets/projects/chess-maps.png",
+    projectPhotos: [
+      "../assets/projects/chess-maps-1.jpg",
+      "../assets/projects/chess-maps-2.jpg",
+      "../assets/projects/chess-maps-3.jpg",
+      "../assets/projects/chess-maps-4.jpg",
+    ],
+  },
+  {
+    title: "Chess Maps",
+    gitLink: "https://github.com/vilaxx0/chess-maps",
+    coverPhoto: "../assets/projects/chess-maps.png",
+    projectPhotos: [
+      "../assets/projects/chess-maps-1.jpg",
+      "../assets/projects/chess-maps-2.jpg",
+      "../assets/projects/chess-maps-3.jpg",
+      "../assets/projects/chess-maps-4.jpg",
+    ],
+  },
+  {
+    title: "Chess Maps",
+    gitLink: "https://github.com/vilaxx0/chess-maps",
+    coverPhoto: "../assets/projects/chess-maps.png",
+    projectPhotos: [
+      "../assets/projects/chess-maps-1.jpg",
+      "../assets/projects/chess-maps-2.jpg",
+      "../assets/projects/chess-maps-3.jpg",
+      "../assets/projects/chess-maps-4.jpg",
+    ],
+  },
+  // {
+  //   title: "Vilo Chats",
+  //   gitLink: "https://github.com/vilaxx0/vilo-chats",
+  //   coverPhoto: "../assets/projects/vilo-chats.png",
+  //   projectPhotos: [
+  //     "../assets/projects/vilo-chats-1.png",
+  //     "../assets/projects/vilo-chats-2.png",
+  //     "../assets/projects/vilo-chats-3.png",
+  //     "../assets/projects/vilo-chats-4.png",
+  //   ],
+  // },
+  // {
+  //   title: "Family Pay",
+  //   gitLink: "https://github.com/vilaxx0/familypay",
+  //   coverPhoto: "../assets/projects/family-pay.png",
+  //   projectPhotos: [
+  //     "../assets/projects/family-pay-1.png",
+  //     "../assets/projects/family-pay-2.png",
+  //     "../assets/projects/family-pay-3.png",
+  //     "../assets/projects/family-pay-4.png",
+  //   ],
+  // },
+];
+
 export const educationItems: Item[] = [
   {
-    title: "Bachelor of Science",
-    description:
-      "ICT & Software Engineering at Fontys University of Applied Sciences",
+    title: "Bachelor of Science, Software Engineering",
+    description: "Fontys University of Applied Sciences",
   },
   {
     title: "High School Diploma",
@@ -12,11 +76,11 @@ export const educationItems: Item[] = [
 ];
 export const jobsItems: Item[] = [
   {
-    title: "Software Developer Internship",
+    title: "Software Developer (Internship)",
     description: "Signify N.V.",
   },
   {
-    title: "Front-end Developer Internship",
+    title: "Front-end Developer (Internship)",
     description: "Connectural B.V.",
   },
 ];

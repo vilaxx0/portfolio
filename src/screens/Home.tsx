@@ -41,7 +41,7 @@ import { goToSection } from "../common/functions";
 export default function Home() {
   return (
     <section id="Home">
-      <div className="title">
+      <div className="home_title">
         <h4>Hello, I am</h4>
         <h1>Vilius BUČINSKAS</h1>
         <h3>Software Developer</h3>

@@ -1,11 +1,38 @@
+import "./styles/containers.css";
 import { FC } from "react";
 import { BsFillPatchCheckFill } from "react-icons/bs";
+import { BiMailSend } from "react-icons/bi";
+import { HiLocationMarker } from "react-icons/hi";
+
+import { MdSchool, MdWork } from "react-icons/md";
+
+import { Item, Project } from "../common/data";
 
 interface AboutProps {
   children: any;
   title: string;
   text: string;
 }
+interface SkillsOuterProps {
+  title: string;
+  children: any;
+}
+
+interface SkillsInnerProps {
+  language: string;
+  level: string;
+}
+
+enum ContainerType {
+  Education,
+  Experience,
+}
+
+interface ExperienceProps {
+  type: ContainerType;
+  children: Item[];
+}
+
 export const AboutContainer: FC<AboutProps> = ({ children, title, text }) => {
   return (
     <div className="about_cont">
@@ -18,12 +45,6 @@ export const AboutContainer: FC<AboutProps> = ({ children, title, text }) => {
   );
 };
 
-interface SkillsOuterProps {
-  title: string;
-  children: any;
-}
-import { FaStar } from "react-icons/fa";
-
 export const SkillsOuterContainer: FC<SkillsOuterProps> = ({
   title,
   children,
@@ -31,7 +52,6 @@ export const SkillsOuterContainer: FC<SkillsOuterProps> = ({
   return (
     <div className="skills_outer_card">
       <div className="skills_title">
-        <FaStar />
         <h3>{title}</h3>
       </div>
       <div className="skills_children">
@@ -42,11 +62,6 @@ export const SkillsOuterContainer: FC<SkillsOuterProps> = ({
     </div>
   );
 };
-
-interface SkillsInnerProps {
-  language: string;
-  level: string;
-}
 
 export const SkillsInnerContainer: FC<SkillsInnerProps> = ({
   language,
@@ -67,19 +82,6 @@ export const SkillsInnerContainer: FC<SkillsInnerProps> = ({
     </div>
   );
 };
-
-enum ContainerType {
-  Education,
-  Experience,
-}
-
-interface ExperienceProps {
-  type: ContainerType;
-  children: Item[];
-}
-type Item = { title: string; description: string };
-
-import { MdSchool, MdWork } from "react-icons/md";
 
 export const ExperienceContainer: FC<ExperienceProps> = ({
   type,
@@ -110,8 +112,7 @@ export const ExperienceContainer: FC<ExperienceProps> = ({
     </div>
   );
 };
-import { BiMailSend } from "react-icons/bi";
-import { HiLocationMarker } from "react-icons/hi";
+
 export const ContactEmail: FC = () => {
   return (
     <div className="contact_card">
@@ -130,4 +131,13 @@ export const ContactOffice: FC = () => {
       <p>Eindhoven, The Netherlands</p>
     </div>
   );
+};
+
+export const ProjectCard: FC<Project> = ({
+  title,
+  gitLink,
+  coverPhoto,
+  projectPhotos,
+}) => {
+  return <div className="project_card"></div>;
 };

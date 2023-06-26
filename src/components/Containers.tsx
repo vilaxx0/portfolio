@@ -115,11 +115,11 @@ export const ExperienceContainer: FC<ExperienceProps> = ({
 
 export const ContactEmail: FC = () => {
   return (
-    <div className="contact_card">
+    <a href="mailto:bucinskas0@gmail.com" className="contact_card">
       <BiMailSend />
       <h2>Email</h2>
       <p>bucinskas0@gmail.com</p>
-    </div>
+    </a>
   );
 };
 

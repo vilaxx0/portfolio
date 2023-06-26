@@ -76,11 +76,19 @@ export const educationItems: Item[] = [
 ];
 export const jobsItems: Item[] = [
   {
-    title: "Software Developer (Internship)",
+    title: "Frontend Engineer via ALTEN",
+    description: "Pie Medical Imaging",
+  },
+  {
+    title: "Technical Software Consultant",
+    description: "ALTEN Nederland",
+  },
+  {
+    title: "Software Engineer (Internship)",
     description: "Signify N.V.",
   },
   {
-    title: "Front-end Developer (Internship)",
+    title: "Mobile Developer (Internship)",
     description: "Connectural B.V.",
   },
 ];
@@ -126,20 +134,19 @@ export const skillsBackend = [
 
 export const skillsFrontend = [
   {
-    language: "TypeScript",
+    language: "TypeScript/Javascript",
+    level: "Advanced",
+  },
+  {
+    language: "React",
     level: "Advanced",
   },
   {
     language: "HTML",
-    level: "Proficient",
+    level: "Advanced",
   },
   {
     language: "CSS",
-    level: "Proficient",
-  },
-
-  {
-    language: "React",
     level: "Proficient",
   },
   {

@@ -39,9 +39,9 @@ export default function About() {
             })}
           </div>
           <div className="about">
-            <p style={{ textAlign: "center", padding: "1em 0" }}>
+            {/* <p style={{ textAlign: "center", padding: "1em 0" }}>
               Full-Stack development in Mobile & WEB
-            </p>
+            </p> */}
             <p>
               I am a software developer with experience in full-stack
               development. My expertise includes both front-end and back-end

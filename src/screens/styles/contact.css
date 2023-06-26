@@ -81,10 +81,12 @@
   color: #f5f5f5;
   resize: none;
   width: 80%;
+  font-family: "Winston-Bold";
 }
 
 .textarea {
   height: 100px;
+  font-family: "Winston-Bold";
 }
 
 .label {

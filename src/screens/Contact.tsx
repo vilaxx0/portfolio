@@ -18,14 +18,6 @@ export default function Contact() {
             <input
               type="text"
               className="input"
-              placeholder="Insert your full name..."
-            />
-            <label className="label">Name</label>
-          </div>
-          <div className="input-group">
-            <input
-              type="text"
-              className="input"
               placeholder="Write the subject..."
             />
             <label className="label">Subject</label>
@@ -37,7 +29,10 @@ export default function Contact() {
             />
             <label className="label">Message</label>
           </div>
-          <Button text={"Send Message"} />
+          <Button
+            text={"Send Message"}
+            onClick={() => alert("Work in progress. (needs backend)")}
+          />
         </div>
       </div>
     </section>

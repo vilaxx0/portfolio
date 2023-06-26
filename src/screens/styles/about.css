@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
 
-  margin-bottom: 50px;
+  margin: 7em 0 0 0;
 }
 
 #About .about_title > h1 {
@@ -68,7 +68,7 @@
   }
 
   #About .about_container .image img {
-    width: 28em;
+    width: 25em;
     border-radius: 10% 10% 10% 10%;
   }
 
